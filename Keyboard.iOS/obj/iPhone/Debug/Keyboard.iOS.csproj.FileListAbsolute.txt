@@ -1,0 +1,5 @@
+C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\bin\iPhone\Debug\KeyboardiOS.exe
+C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\bin\iPhone\Debug\KeyboardiOS.pdb
+C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\obj\iPhone\Debug\KeyboardiOS.exe
+C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\obj\iPhone\Debug\KeyboardiOS.pdb
+C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\obj\iPhone\Debug\Keyboard.iOS.csprojResolveAssemblyReference.cache
