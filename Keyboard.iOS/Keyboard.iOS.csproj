@@ -79,7 +79,6 @@
     <Compile Include="KeyboardView.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="StatePickerModel.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -28,9 +28,7 @@ namespace Keyboard.iOS
 
         public KeyboardView()
         {
-            
             kbHandler = new KeyboardHandler();
-
 
             header = new UILabel(new RectangleF(75, 50, 100, 40));
             header.Text = "CTS Form";
@@ -52,6 +50,7 @@ namespace Keyboard.iOS
             View.AutoresizingMask = UIViewAutoresizing.FlexibleWidth |
                 UIViewAutoresizing.FlexibleHeight;
 
+            //Add the EnhancedToolbar to the controls.
             firstName.InputAccessoryView = new EnhancedToolbar(firstName, null, lastName);
             lastName.InputAccessoryView = new EnhancedToolbar(lastName, firstName, address1);
             address1.InputAccessoryView = new EnhancedToolbar(address1, lastName, address2);
@@ -61,6 +60,7 @@ namespace Keyboard.iOS
             zip.InputAccessoryView = new EnhancedToolbar(zip, state, null);
             zip.KeyboardType = UIKeyboardType.NumberPad;
 
+            //Add our controls to the view
             View.AddSubview(header);
             View.AddSubview(firstName);
             View.AddSubview(lastName);
@@ -70,6 +70,7 @@ namespace Keyboard.iOS
             View.AddSubview(state);
             View.AddSubview(zip);
 
+            //Send away the keyboard when the screen is tapped.
             var g = new UITapGestureRecognizer(() =>
             {
                 firstName.ResignFirstResponder();
@@ -84,6 +85,7 @@ namespace Keyboard.iOS
 
         }
 
+        //Helper method for initializing text fields
         private void InitializeTextField(out UITextField field, string placeholder, int x = fieldX, int y = 150, int width = fieldWidth, int height = fieldHeight)
         {
             field = new UITextField()
@@ -100,6 +102,7 @@ namespace Keyboard.iOS
             field.LeftViewMode = UITextFieldViewMode.Always;
         }
 
+        //Add the observers for when the Keyboard will show and hide.
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
@@ -108,6 +111,7 @@ namespace Keyboard.iOS
             keyboardDown = NSNotificationCenter.DefaultCenter.AddObserver(UIKeyboard.WillHideNotification, kbHandler.KeyboardDownNotification);
         }
 
+        //Remove the keyboard observers
         public override void ViewWillDisappear(bool animated)
         {
             base.ViewWillDisappear(animated);

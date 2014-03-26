@@ -1,5 +1,0 @@
-C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\bin\iPhoneSimulator\Debug\KeyboardiOS.exe
-C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\bin\iPhoneSimulator\Debug\KeyboardiOS.pdb
-C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\obj\iPhoneSimulator\Debug\Keyboard.iOS.csprojResolveAssemblyReference.cache
-C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\obj\iPhoneSimulator\Debug\KeyboardiOS.exe
-C:\Users\bponath\Dropbox\Xamarin\Keyboard\Keyboard.iOS\obj\iPhoneSimulator\Debug\KeyboardiOS.pdb
